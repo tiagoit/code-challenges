@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/src/hackerrank/01-drawingBook.js"
+      "program": "${workspaceFolder}/src/hackerrank/10-encryption.js"
     }
   ]
 }
