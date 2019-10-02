@@ -6,8 +6,12 @@
 // m: an integer representing the number of wrappers he can turn in for a free bar
 
 function chocolateFeast(n, c, m) {
+    // Base case: If the money is less than the chocolate, he can't buy anymore.
     if(n<c) return 0;
-    return Math.floor(n / c) + chocolateFeast(n%c + (Math.floor(n/c) * c/m), c, m);
+    let chocolates = Math.floor(n / c);
+    let wrapperValue = c / m;
+    let change = n%c;
+    return chocolates + chocolateFeast(change + (chocolates * wrapperValue), c, m);
 }
 
 console.log(chocolateFeast(10, 2, 5)); // 6
