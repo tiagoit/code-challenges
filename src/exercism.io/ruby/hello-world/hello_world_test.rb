@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 begin
   gem 'minitest', '>= 5.0.0'
   require 'minitest/autorun'
@@ -15,7 +17,7 @@ end
 class HelloWorldTest < Minitest::Test
   def test_say_hi
     # skip
-    assert_equal "Hello, World!", HelloWorld.hello
+    assert_equal 'Hello, World!', HelloWorld.hello
   end
 end
 
