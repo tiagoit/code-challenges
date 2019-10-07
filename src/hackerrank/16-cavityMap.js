@@ -1,5 +1,5 @@
 // https://www.hackerrank.com/contests/microverse-coding-challenges/challenges/cavity-map
-// HackerRank - 16 - Cavity Map
+// 16 - Cavity Map
 
 function cavityMap(grid) {
   if(grid.length <= 2) return grid;
