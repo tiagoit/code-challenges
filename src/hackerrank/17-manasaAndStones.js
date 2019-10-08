@@ -3,10 +3,14 @@
 
 function solve(n, a, b) {
   let possibleLastRocks = [];
+
   for(let numOfAs=0; numOfAs<=(n-1); numOfAs++) {
     let possibleLastRockNum = a * numOfAs + b * ((n-1) - numOfAs);
-    if(possibleLastRocks.indexOf(possibleLastRockNum) === -1) possibleLastRocks.push(possibleLastRockNum);
+    if(possibleLastRocks.indexOf(possibleLastRockNum) === -1) {
+      possibleLastRocks.push(possibleLastRockNum);
+    }
   }
+
   return possibleLastRocks.sort((a, b) => a-b);
 }
 
