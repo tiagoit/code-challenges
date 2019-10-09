@@ -12,11 +12,6 @@ function solve(b) {
       (board[i+1] && board[i+1] != board[i])) alreadyHappy = false;
   }
 
-  board.forEach(c => {
-
-    
-  });
-
   let underscorePresent = !!elements['_'];
 
   let alone = false;
