@@ -1,0 +1,20 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "rdebug-ide --host 127.0.0.1 --port 1234 --dispatcher-port 26162 ./src/hackerrank/main.rb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferreirati/code-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferreirati/code-challenges/issues"
+  },
+  "homepage": "https://github.com/ferreirati/code-challenges#readme"
+}
