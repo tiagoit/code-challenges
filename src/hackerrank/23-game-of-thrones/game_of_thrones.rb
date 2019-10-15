@@ -2,14 +2,16 @@
 
 # https://www.hackerrank.com/contests/microverse-coding-challenges/challenges/game-of-thrones
 # 23 - Game of Thrones - 2019-10-15
-# Complexity: O(n)
+# Complexity: O(n) + O(n) + O(1) + O(1) = O(n)
 
 def game_of_thrones s
   letters = {}
+  # count the letters occurence
   s.length.times do |i| # O(n)
     letters[s[i]] = letters[s[i]].nil? ? 1 : letters[s[i]] += 1
   end
 
+  # count odds
   odds = 0
   letters.each do |_, count| # O(n) | Worst case: no duplicated letters
     odds += 1 if count.odd?
