@@ -6,7 +6,6 @@ def divisible_sum_pairs n, k, ar
   n.times do |i|
     ((i + 1)...n).each do |j|
       pairs += 1 if ((ar[i] + ar[j]) % k).zero?
-      ar[i]
     end
   end
   pairs
