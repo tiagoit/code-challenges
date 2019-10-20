@@ -25,19 +25,15 @@
 
 def palindrome_index_faster s
   return -1 if palindrome? s
-
+  
   len = s.length
-  # puts s
   (len / 2).times do |i|
     next if s[i].eql? s[len - 1 - i]
 
     # remove from left
-    # puts s[0, i] + ' ' + s[i + 1, len - 1]
     return i if palindrome?(s[0, i] + s[i + 1, len - 1])
 
     # remove from right
-    # puts s[0, len - 1 - i] + ' ' + s[len - i, len - 1]
-    # puts ' '
     return palindrome?(s[0, len - 1 - i] + s[len - i, len - 1]) ? (len - i - 1) : -1
   end
 
