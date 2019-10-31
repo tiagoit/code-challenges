@@ -128,6 +128,14 @@ class List
   def empty?
     @head.nil?
   end
+
+  def each
+    current = @head
+    while current
+      yield current.value
+      current = current.next_node
+    end
+  end
 end
 
 # list = List.new
