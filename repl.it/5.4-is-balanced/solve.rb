@@ -32,7 +32,8 @@ end
 def balanced?(tree)
     return true if tree.nil? || (tree.left.nil? && tree.right.nil?)
 
-    return false if (height(tree.left, :min) - height(tree.right, :max)).abs() > 1
+    return false if (height(tree.left, :min) - height(tree.right, :max)).abs() > 1 ||
+                    (height(tree.left, :max) - height(tree.right, :min)).abs() > 1
 
     true
 end
